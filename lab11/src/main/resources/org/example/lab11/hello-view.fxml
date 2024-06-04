@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="550.0" prefWidth="700.0" spacing="20.0" style="-fx-background-color: #CBDFEB;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab11ejemplo.ListController">
+  <children>
+    <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+      <children>
+        <Button fx:id="btnNombre" mnemonicParsing="false" onAction="#handleBtnNombre" text="Ordenar por nombre">
+          <font>
+            <Font size="18.0" />
+          </font>
+          <HBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </HBox.margin>
+        </Button>
+        <Button fx:id="btnSalario" layoutX="321.0" layoutY="43.0" mnemonicParsing="false" onAction="#handleBtnSalario" text="Ordenar por salario">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Button>
+      </children>
+    </HBox>
+    <ListView fx:id="lvEmployees" VBox.vgrow="ALWAYS" />
+  </children>
+</VBox>
